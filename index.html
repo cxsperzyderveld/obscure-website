@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Obscure</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Rajdhani', sans-serif;
+      background-color: #0e0e0e;
+      color: #f0f0f0;
+      overflow-x: hidden;
+    }
+    .glitch-text {
+      font-size: 2rem;
+      position: relative;
+      color: red;
+      animation: glitch 1s infinite;
+    }
+    @keyframes glitch {
+      0% {text-shadow: 2px 0 red;}
+      20% {text-shadow: -2px 0 #0ff;}
+      40% {text-shadow: 2px 0 #0f0;}
+      60% {text-shadow: -2px 0 red;}
+      80% {text-shadow: 2px 0 #00f;}
+      100% {text-shadow: -2px 0 #f0f;}
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      animation: fadeInDown 1s ease-out;
+    }
+    header img {
+      max-width: 150px;
+    }
+    .hero {
+      padding: 2rem;
+      text-align: center;
+      animation: fadeIn 2s ease-in;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: white;
+    }
+    .section {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 1rem;
+      animation: slideUp 1.5s ease-out;
+    }
+    .section h2 {
+      color: #ff4444;
+    }
+    .section img {
+      width: 100%;
+      border-radius: 16px;
+      margin-top: 1rem;
+      transition: transform 0.5s ease;
+    }
+    .section img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+      background-color: #111;
+      animation: fadeInUp 1.5s ease-in;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="Logo.png" alt="Obscure Logo" />
+  </header>
+
+  <div class="hero">
+    <h1>OBSCURE</h1>
+    <p class="glitch-text">"I don't need to conquer the world. I just need to rewrite it. Bit by bit."</p>
+  </div>
+
+  <div class="section" id="about">
+    <h2>About Obscure</h2>
+    <p>Obscure is a digital manipulator — a rogue genius who uses advanced code and AI to reshape the fabric of reality itself. Born from trauma, he sees the world not as it is, but as broken code — and he’s rewriting it in his own image.</p>
+    <img src="obscure-3.jpeg" alt="Obscure Character Image">
+  </div>
+
+  <div class="section" id="enemies">
+    <h2>His Enemies</h2>
+    <ul>
+      <li><strong>Clarity</strong> – His idealistic future self, trying to undo the damage he caused.</li>
+      <li><strong>Null</strong> – The analog professor, sworn to disrupt Obscure’s digital reign.</li>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2025 Obscure Universe. All rights corrupted.
+  </footer>
+</body>
+</html>
